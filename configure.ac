@@ -5,7 +5,7 @@ AC_PREREQ([2.63])
 AC_INIT([nss_securepass], [1.0.0.0])
 AC_CANONICAL_HOST
 case $host_os in
-  linux*)
+  linux* | gnu* | k*bsd*-gnu)
         # OK, let's go on
         AC_MSG_NOTICE(your host_os is $host_os)
         ;;
